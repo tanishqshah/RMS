@@ -1,0 +1,16 @@
+version : '3.8'
+
+services:
+  frontend:
+    container_name: angular
+    restart: always
+    build: .
+    ports:
+      - 4200:80
+    networks:
+      - main
+
+networks:
+  main:
+    name : node-postgres-angular
+    
