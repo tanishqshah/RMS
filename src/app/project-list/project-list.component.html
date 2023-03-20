@@ -1,0 +1,39 @@
+<div class="container">
+  <table class="table my-5">
+    <thead>
+      <tr>
+        <th scope="col">PROJECT ID</th>
+        <th scope="col">PROECT NAME</th>
+        <th scope="col">NO OF EMPLOYEES</th>
+        <th scope="col">START_DATE</th>
+        <th scope="col">END_DATE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="
+          let dat of data | paginate : { itemsPerPage: 2, currentPage: p }
+        "
+      >
+        <th scope="row">{{ dat.eid }}</th>
+        <td>{{ dat.pname }}</td>
+        <td>{{ dat.numOfEmp }}</td>
+        <td>{{ dat.sdate }}</td>
+        <td>{{ dat.edate }}</td>
+      </tr>
+
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
