@@ -1,5 +1,5 @@
 <div class="container">
-  <table class="table my-5">
+  <table class="table my-5 border text-center">
     <thead>
       <tr>
         <th scope="col">PROJECT ID</th>
@@ -15,11 +15,11 @@
           let dat of data | paginate : { itemsPerPage: 5, currentPage: p }
         "
       >
-        <th scope="row">{{ dat.eid }}</th>
-        <td>{{ dat.pname }}</td>
-        <td>{{ dat.numOfEmp }}</td>
-        <td>{{ dat.sdate }}</td>
-        <td>{{ dat.edate }}</td>
+        <td scope="row" class="p-4">{{ dat.eid }}</td>
+        <td class="p-4">{{ dat.pname }}</td>
+        <td class="p-4">{{ dat.numOfEmp }}</td>
+        <td class="p-4">{{ dat.sdate }}</td>
+        <td class="p-4">{{ dat.edate }}</td>
       </tr>
 
       <!-- <tr>
