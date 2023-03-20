@@ -17,15 +17,30 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link navhover" aria-current="page" href="#"
+          <a
+            class="nav-link navhover"
+            [ngClass]="{ 'nav-active': count === '1' }"
+            (click)="change('1')"
+            aria-current="page"
+            href="#"
             >All Projects</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link navhover" href="#">Pending Projects</a>
+          <a
+            class="nav-link navhover"
+            [ngClass]="{ 'nav-active': count === '2' }"
+            (click)="change('2')"
+            >Pending Projects</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link navhover">Past Projects</a>
+          <a
+            class="nav-link navhover"
+            [ngClass]="{ 'nav-active': count === '3' }"
+            (click)="change('3')"
+            >Past Projects</a
+          >
         </li>
       </ul>
       <a href="" class="btn btn-dark me-1"> Create Project </a>

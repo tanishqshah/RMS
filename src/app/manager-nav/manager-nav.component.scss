@@ -26,6 +26,14 @@
   font-weight: 700;
 }
 .navhover:hover {
+  // width: 100%;
+  // border-bottom: 2px solid #00bdd6ff; /* primary-500 */
+  // border-radius: 0px;
+  color: #00bdd6ff !important;
+  cursor: pointer;
+}
+
+.nav-active {
   width: 100%;
   border-bottom: 2px solid #00bdd6ff; /* primary-500 */
   border-radius: 0px;
