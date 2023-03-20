@@ -12,7 +12,7 @@
     <tbody>
       <tr
         *ngFor="
-          let dat of data | paginate : { itemsPerPage: 2, currentPage: p }
+          let dat of data | paginate : { itemsPerPage: 5, currentPage: p }
         "
       >
         <th scope="row">{{ dat.eid }}</th>
@@ -35,5 +35,10 @@
       </tr> -->
     </tbody>
   </table>
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  <div class="tablecontrolCont">
+    <pagination-controls
+      (pageChange)="p = $event"
+      class="mx-auto tablecontrol"
+    ></pagination-controls>
+  </div>
 </div>

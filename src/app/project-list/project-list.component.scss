@@ -1,2 +1,11 @@
 th {
 }
+.tablecontrolCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tablecontrol {
+  display: inline-block;
+  //   margin: 0 auto;
+}
