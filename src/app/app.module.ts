@@ -8,6 +8,8 @@ import { ProjectManagerPanelComponent } from './project-manager-panel/project-ma
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ManagerNavComponent } from './manager-nav/manager-nav.component';
 import { ProjectListComponent } from './project-list/project-list.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { AdminProjectListComponent } from './admin-project-list/admin-project-list.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { ProjectListComponent } from './project-list/project-list.component';
     ProjectManagerPanelComponent,
     ManagerNavComponent,
     ProjectListComponent,
+    AdminNavComponent,
+    AdminProjectListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
