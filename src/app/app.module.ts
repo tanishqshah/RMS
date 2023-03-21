@@ -10,6 +10,8 @@ import { ManagerNavComponent } from './manager-nav/manager-nav.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { AdminProjectListComponent } from './admin-project-list/admin-project-list.component';
+import { CreateProjectComponent } from './create-project/create-project.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { AdminProjectListComponent } from './admin-project-list/admin-project-li
     ProjectListComponent,
     AdminNavComponent,
     AdminProjectListComponent,
+    CreateProjectComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
+  imports: [BrowserModule, AppRoutingModule, NgxPaginationModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

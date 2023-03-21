@@ -22,7 +22,7 @@
             [ngClass]="{ 'nav-active': count === '1' }"
             (click)="change('1')"
             aria-current="page"
-            href="#"
+            [routerLink]="['/manager/project-list']"
             >All Projects</a
           >
         </li>
@@ -30,6 +30,7 @@
           <a
             class="nav-link navhover"
             [ngClass]="{ 'nav-active': count === '2' }"
+            [routerLink]="['/manager/project-list']"
             (click)="change('2')"
             >Pending Projects</a
           >
@@ -38,12 +39,20 @@
           <a
             class="nav-link navhover"
             [ngClass]="{ 'nav-active': count === '3' }"
+            [routerLink]="['/manager/project-list']"
             (click)="change('3')"
             >Past Projects</a
           >
         </li>
       </ul>
-      <a href="" class="btn btn-dark me-1"> Create Project </a>
+      <a
+        class="btn btn-dark me-1"
+        [routerLink]="['/manager/create-project']"
+        (click)="change('4')"
+      >
+        Create Project
+      </a>
+      <!-- (click)="createProject()" -->
       <form class="d-flex" role="search">
         <a href="" class="btn searchicon">
           <i class="fa-solid fa-magnifying-glass"></i

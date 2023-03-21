@@ -11,3 +11,28 @@ th {
   display: inline-block;
   //   margin: 0 auto;
 }
+.tablecontrol ::ng-deep .ngx-pagination .current {
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #00bdd6;
+  color: #00bdd6;
+}
+
+td button:first-child {
+  background-color: #f5f2fd;
+  color: #8353e2;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+td button:last-child {
+  background-color: #ebfdff;
+  color: #00bdd6;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+}
