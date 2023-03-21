@@ -1,0 +1,43 @@
+th {
+    background-color: #FAFAFB;
+    color: #565E6C;
+    font-family: 'Epilogue', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    height:60px;
+  }
+  .tablecontrolCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tablecontrol {
+    display: inline-block;
+    font-size: large;
+    //   margin: 0 auto;
+  }
+  .tablecontrol ::ng-deep .ngx-pagination .current {
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #00BDD6;
+    color:#00BDD6;
+  }
+  
+  td button:first-child{
+    background-color: #F5F2FD;
+    color: #8353E2;
+    border-radius: 20px;
+    border:none;
+    padding:8px 15px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  td button:last-child{
+    background-color: #EBFDFF;
+    color: #00BDD6;
+    border-radius: 20px;
+    border:none;
+    padding:8px 15px; 
+    margin-bottom: 10px;
+  }
